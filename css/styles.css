@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-primary: #dbc06c;
+    --color-secondary: #495e58;
+    --color-main: #dbc06c;
+}
+html{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary);
+
+}
+header img {
+    margin: 1rem;
+    width: 50%;
+    max-width: 20rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: var(--color-primary);
+    padding: 0;
+    margin: 0;
+
+}
+nav ul li{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    padding: 1.5rem;
+    width: 100%;
+    text-decoration: none;
+    color: #495e58;
+    font-weight: bold;
+    text-align: center;
+}
+nav li a:hover{
+    background-color: #bca45b;
+    color: white;
+
+}
+
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    color: var(--color-secondary);
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.promotions{
+    background-image: url(../assets/backgrounds/falafel-hummus-pita-middle-eastern-arabic-dishes-halal-food.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: calc(100vh - (190px));
+    color : white;
+    cursor: pointer;
+}
+
+.discount_Text{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 100%;
+    text-shadow: 2px 0px 20px #000000;
+    position: relative;  
+    z-index: 0;
+}
+.discount_Text::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    opacity: 0.4;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* End of Test Code */
+article{
+    text-align: center;
+    flex: 1 1 15rem;
+    color: #2f3d39;
+    display: flex;
+    flex-direction: column;
+    border-width: 5px 2px 2px 2px;
+    border-style: solid;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.5s ease;
+}
+article:hover{
+    transform: scale(1.05);
+}
+
+article h2{
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+}
+article p{
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+
+
+.artic1{
+    background-color: #dcd0ac;
+    border-color:  #dcd0ac;
+}
+.artic1 .artic_img{
+    flex-basis: 200px;
+    background-image: url(../assets/backgrounds/turkish-breakfast-shakshuka-olives-cheese-fruit-rich-brunch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.artic2{
+    background-color: #bca45b;
+    border-color:  #bca45b;
+}
+
+.artic2 .artic_img{
+    flex-basis: 200px;
+    background-image: url(../assets/backgrounds/golden-cutlery-with-textile-plate-dark-background-top-view.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.artic3{
+    background-color: #a38a4f;
+    border-color:  #a38a4f;
+}
+.artic3 .artic_img{
+    flex-basis: 200px;
+    background-image: url(../assets/backgrounds/barista-handling-hot-cafe-latte.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+footer{
+    display: flex;
+    background-color: var(--color-primary);
+    align-items: center;
+}
+footer div{
+    flex : 50%;
+    align-items: center;
+}
+.footer_logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footer_copyright{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.footer_copyright p {
+    margin: 0;
+    padding: 0;
+}
+.v_line{
+    border-left: 2px solid #495e58;
+    flex: 1%;
+    height: 50px;
+    padding-right: 10px;
+}
+
+footer img{
+    margin: 1rem;
+    height: 70px;
+}
+
+
